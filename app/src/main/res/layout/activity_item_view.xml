@@ -67,7 +67,7 @@
         <RatingBar
             android:id="@+id/ratingBar"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:rating="2"
             android:layout_weight="0"
             android:layout_marginStart="10dp"/>
@@ -75,11 +75,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="2900"
+            android:text="2900 ratings"
             android:layout_weight="1"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:gravity="end"
+            android:gravity="center"
             android:layout_marginEnd="15dp"
             />
 
@@ -95,6 +95,51 @@
         android:layout_marginEnd="5dp"
         android:background="@color/black"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/lineView"
+        app:layout_constraintRight_toRightOf="@id/lineView"
+        app:layout_constraintLeft_toLeftOf="@id/lineView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-39%"
+            android:textSize="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ru"
+            android:textSize="16sp"
+            android:layout_marginStart="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9,199"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14,999"
+            android:textSize="30sp"
+            
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
