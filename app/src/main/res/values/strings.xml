@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mobile_shop_ui</string>
+    <string name="todo">TODO</string>
+    <string name="search">search</string>
+    <string name="notification">notification</string>
+    <string name="cart">cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_camera">Back Camera</string>
+</resources>
