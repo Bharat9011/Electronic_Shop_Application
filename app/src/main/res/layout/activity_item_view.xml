@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:text="@string/example_title"
         android:textSize="16sp"
-        android:padding="4dp"
+        android:padding="7dp"
         android:textStyle="bold"
         android:lineHeight="24sp"
         app:layout_constraintTop_toBottomOf="@id/showImages"
@@ -42,15 +42,85 @@
         android:textStyle="bold"
         />
 
+    <LinearLayout
+        android:id="@+id/starRating"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/linkcompanies"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/ratingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4.1"
+            android:layout_weight=".2"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:rating="2"
+            android:layout_weight="0"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2900"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:layout_marginEnd="15dp"
+            />
+
+    </LinearLayout>
+
     <View
         android:id="@+id/lineView"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        app:layout_constraintTop_toBottomOf="@id/linkcompanies"
+        app:layout_constraintTop_toBottomOf="@id/starRating"
         android:layout_marginTop="5dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="5dp"
         android:background="@color/black"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Buy Now"
+            android:textColor="@color/white"
+            android:layout_marginEnd="9dp"
+            android:background="@color/green"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Buy Now"
+            android:textColor="@color/white"
+            android:background="@color/orange"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

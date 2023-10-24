@@ -1,6 +1,9 @@
 package com.example.mobile_shop_ui;
 
+import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,10 +56,8 @@ public class ui_control extends RecyclerView.Adapter<ui_control.ControlviewHolde
 
         public ControlviewHolder(@NonNull View itemView) {
             super(itemView);
-
             show_cat_image = itemView.findViewById(R.id.show_cat_image);
             category_name = itemView.findViewById(R.id.category_name);
-
         }
     }
 

@@ -107,13 +107,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @SuppressLint("ResourceAsColor")
             @Override
             public boolean onQueryTextSubmit(String query) {
                 return false;
             }
 
-            @SuppressLint("ResourceAsColor")
             @Override
             public boolean onQueryTextChange(String newText) {
                 return false;
@@ -136,11 +134,8 @@ public class MainActivity extends AppCompatActivity {
 //            imgBtnlogo.setVisibility(View.GONE);
             Toast.makeText(this, "notification", Toast.LENGTH_SHORT).show();
         }
-
         return true;
     }
-
-
 
     void FragmentLoding(Fragment fragment){
         FragmentManager fm = getFragmentManager();
