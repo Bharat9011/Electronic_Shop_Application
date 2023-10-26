@@ -7,172 +7,322 @@
     android:scrollbars="vertical"
     tools:context=".itemVIew">
 
-    <ImageView
-        android:id="@+id/showImages"
+    <LinearLayout
+        android:id="@+id/showImagesCat"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/folder"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/showImages"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/folder" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/charging_ports" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="charging port"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/charging_ports" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="charging port"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/charging_ports" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="charging port"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/charging_ports" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="charging port"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/charging_ports" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="charging port"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/productTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:lineHeight="24sp"
+        android:padding="7dp"
         android:text="@string/example_title"
         android:textSize="16sp"
-        android:padding="7dp"
         android:textStyle="bold"
-        android:lineHeight="24sp"
-        app:layout_constraintTop_toBottomOf="@id/showImages"
-        app:layout_constraintRight_toRightOf="@id/showImages"
-        app:layout_constraintLeft_toLeftOf="@id/showImages"
-        />
+        app:layout_constraintLeft_toLeftOf="@id/showImagesCat"
+        app:layout_constraintRight_toRightOf="@id/showImagesCat"
+        app:layout_constraintTop_toBottomOf="@id/showImagesCat" />
 
     <TextView
         android:id="@+id/linkcompanies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Visit the Samsung Store"
-        app:layout_constraintTop_toBottomOf="@id/productTitle"
-        app:layout_constraintLeft_toLeftOf="@id/productTitle"
         android:layout_marginStart="35dp"
+        android:text="Visit the Samsung Store"
         android:textColor="@color/blue"
         android:textStyle="bold"
-        />
+        app:layout_constraintLeft_toLeftOf="@id/productTitle"
+        app:layout_constraintTop_toBottomOf="@id/productTitle" />
 
-<!--    <LinearLayout
-        android:id="@+id/starRating"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@id/linkcompanies"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent">
+    <!--    <LinearLayout
+            android:id="@+id/starRating"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/linkcompanies"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
 
-        <TextView
-            android:id="@+id/ratingValue"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="4.1"
-            android:layout_weight=".2"
-            android:gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            />
+            <TextView
+                android:id="@+id/ratingValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="4.1"
+                android:layout_weight=".2"
+                android:gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
 
-        <RatingBar
-            android:id="@+id/ratingBar"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:rating="2"
-            android:numStars="4"
-            android:layout_weight="1.3"/>
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:rating="2"
+                android:numStars="4"
+                android:layout_weight="1.3"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="2900 ratings"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginEnd="15dp"
-            />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="2900 ratings"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                />
 
-    </LinearLayout>-->
+        </LinearLayout>-->
 
     <LinearLayout
         android:id="@+id/price"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/linkcompanies"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/linkcompanies"
         app:layout_constraintRight_toRightOf="@id/linkcompanies"
-        app:layout_constraintLeft_toLeftOf="@id/linkcompanies">
+        app:layout_constraintTop_toBottomOf="@id/linkcompanies">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/_39"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_marginStart="20sp"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="\u20B9"
-            android:textSize="20sp"
-            android:gravity="bottom"
-            android:layout_marginStart="20sp"
-            />
+            <TextView
+                android:id="@+id/discountper"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20sp"
+                android:gravity="center"
+                android:text="@string/_39"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/orignalVal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="9,199"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="bottom"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20sp"
+                android:gravity="bottom"
+                android:text="\u20B9"
+                android:textSize="20sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="14,999"
-            android:textSize="30sp"
-            android:layout_marginStart="20sp"
-            />
+            <TextView
+                android:id="@+id/orignalVal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="9,199"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20sp"
+                android:text="14,999"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inclusive of all taxes"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/emi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/info"
+                android:text="@string/emi_string"
+                android:textSize="14sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-<!--    <View
-        android:id="@+id/lineView"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        app:layout_constraintTop_toBottomOf="@id/price"
-        app:layout_constraintRight_toRightOf="@id/price"
-        app:layout_constraintLeft_toLeftOf="@id/price"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="5dp"
-        android:background="@color/black"
-        />-->
+    <!--    <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/price"
+            app:layout_constraintRight_toRightOf="@id/price"
+            app:layout_constraintLeft_toLeftOf="@id/price"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/black"
+            />-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_marginEnd="9dp"
             android:layout_weight="1"
+            android:background="@color/green"
             android:text="Buy Now"
             android:textAllCaps="false"
-            android:textSize="20sp"
             android:textColor="@color/white"
-            android:layout_marginEnd="9dp"
-            android:background="@color/green"/>
+            android:textSize="20sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@color/orange"
             android:text="Add Cart"
-            android:textSize="20sp"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:background="@color/orange"/>
+            android:textSize="20sp" />
 
     </LinearLayout>
 

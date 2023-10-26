@@ -26,7 +26,8 @@
                 android:layout_weight="0.70"
                 android:background="#FFF"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/slider1" />
+                app:srcCompat="@drawable/slider1"
+                android:contentDescription="image not found" />
         </LinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -36,59 +37,9 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
+        android:scrollbars="horizontal"
         android:orientation="vertical">
 
     </androidx.recyclerview.widget.RecyclerView>
-
-    <LinearLayout
-        android:id="@+id/showAllPorduct"
-        android:layout_width="match_parent"
-        android:layout_height="360dp"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_margin="20dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="170dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/back_camera"/>
-
-            <LinearLayout
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_gravity="center"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="@string/back_camera"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    tools:ignore="NestedWeights" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="@string/back_camera"
-                    android:textSize="25sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
 
 </LinearLayout>

@@ -44,11 +44,10 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
         RecyclerView.setLayoutManager(layoutManager);
 
-        String backEndUrl = "http://192.168.0.113/mobile_shop/code.php?cmd=getData";
+        String backEndUrl = "http://192.168.0.120/mobile_shop/code.php?cmd=getData";
         StringRequest mrequest = new StringRequest(Request.Method.POST, backEndUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-
                 GsonBuilder gsonBuilder = new GsonBuilder();
                 Gson gson = gsonBuilder.create();
                 massage_list []massageLists = gson.fromJson(response, massage_list[].class);

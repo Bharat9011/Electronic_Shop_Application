@@ -5,8 +5,7 @@
     <string name="notification">notification</string>
     <string name="cart">cart</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="back_camera">Back Camera</string>
     <string name="example_title"><![CDATA[Samsung Galaxy M14 5G (Berry Blue,4GB,128GB)|50MP Triple Cam|Segment\'s Only 6000 mAh 5G SP|5nm Processor|2 Gen. OS Upgrade & 4 Year Security Update|12GB RAM with RAM Plus|Android 13|Without Charger]]></string>
     <string name="_39">-39%</string>
+    <string name="emi_string"><b>EMI</b> starts at ₹339.No Cost EMI available <b>EMI options</b></string>
 </resources>

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,16 +17,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 public class ui_control extends RecyclerView.Adapter<ui_control.ControlviewHolder> {
-
-
     massage_list[] massageList;
     Context context;
-
     public ui_control(massage_list[] massageList, Context context) {
         this.massageList = massageList;
         this.context = context;
     }
-
     @NonNull
     @Override
     public ControlviewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -37,19 +34,23 @@ public class ui_control extends RecyclerView.Adapter<ui_control.ControlviewHolde
 
     @Override
     public void onBindViewHolder(@NonNull ControlviewHolder holder, int position) {
-
         massage_list massage = massageList[position];
-        Glide.with(holder.show_cat_image.getContext()).load("http://192.168.0.114/mobile_shop/"+massage.getFile()).into(holder.show_cat_image);
+        Glide.with(holder.show_cat_image.getContext()).load("http://192.168.0.120/mobile_shop/"+massage.getFile()).into(holder.show_cat_image);
+        holder.show_cat_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context.getApplicationContext(), itemVIew.class);
+                context.getApplicationContext().startActivity(intent);
+            }
+        });
         holder.category_name.setText(massage.getCategory_name());
-
     }
 
     @Override
     public int getItemCount() {
         return massageList.length;
     }
-
-    class ControlviewHolder extends RecyclerView.ViewHolder {
+    public static class ControlviewHolder extends RecyclerView.ViewHolder {
 
         ImageView show_cat_image;
         TextView category_name;
@@ -60,5 +61,4 @@ public class ui_control extends RecyclerView.Adapter<ui_control.ControlviewHolde
             category_name = itemView.findViewById(R.id.category_name);
         }
     }
-
 }
