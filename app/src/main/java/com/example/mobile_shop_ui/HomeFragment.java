@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -44,7 +45,7 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
         RecyclerView.setLayoutManager(layoutManager);
 
-        String backEndUrl = "http://192.168.0.120/mobile_shop/code.php?cmd=getData";
+        String backEndUrl = "http://192.168.0.103/mobile_shop/code.php?cmd=getData";
         StringRequest mrequest = new StringRequest(Request.Method.POST, backEndUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -56,7 +57,7 @@ public class HomeFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(view.getContext(), error.getMessage(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity().getApplicationContext(), error.getMessage(),Toast.LENGTH_LONG).show();
             }
         });
 

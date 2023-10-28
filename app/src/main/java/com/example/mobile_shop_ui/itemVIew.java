@@ -35,6 +35,5 @@ public class itemVIew extends AppCompatActivity {
 //        content.setSpan(new UnderlineSpan(),0,content.length(),0);
 //        orignalVal.setText("20,200");
         orignalVal.setPaintFlags(orignalVal.getPaintFlags()|Paint.STRIKE_THRU_TEXT_FLAG);
-
     }
 }
