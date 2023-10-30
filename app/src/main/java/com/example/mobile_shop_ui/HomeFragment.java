@@ -45,7 +45,7 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
         RecyclerView.setLayoutManager(layoutManager);
 
-        String backEndUrl = "http://192.168.0.103/mobile_shop/code.php?cmd=getData";
+        String backEndUrl = "http://192.168.0.105/mobile_shop/code.php?cmd=getData";
         StringRequest mrequest = new StringRequest(Request.Method.POST, backEndUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

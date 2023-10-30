@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Folder">
 
-    <LinearLayout
+    <!--<LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -49,7 +49,7 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/testimage1"
                             android:contentDescription="TODO" />
-                        <!--                                android:src="@android:drawable/btn_star" -->
+                        &lt;!&ndash;                                android:src="@android:drawable/btn_star" &ndash;&gt;
                     </LinearLayout>
 
                     <LinearLayout
@@ -83,11 +83,11 @@
                             android:text="₹ 610"
                             android:textStyle="bold" />
 
-                        <!--                            <TextView-->
-                        <!--                                android:id="@+id/textView6"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="0dp"-->
-                        <!--                                android:layout_weight="0.20" />-->
+                        &lt;!&ndash;                            <TextView&ndash;&gt;
+                        &lt;!&ndash;                                android:id="@+id/textView6"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_height="0dp"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_weight="0.20" />&ndash;&gt;
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/button2"
@@ -151,11 +151,11 @@
                             android:text="₹ 550"
                             android:textStyle="bold" />
 
-                        <!--                            <TextView-->
-                        <!--                                android:id="@+id/textView6"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="0dp"-->
-                        <!--                                android:layout_weight="0.20" />-->
+                        &lt;!&ndash;                            <TextView&ndash;&gt;
+                        &lt;!&ndash;                                android:id="@+id/textView6"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_height="0dp"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_weight="0.20" />&ndash;&gt;
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/button3df"
@@ -283,11 +283,11 @@
                             android:text="₹ 550"
                             android:textStyle="bold" />
 
-                        <!--                            <TextView-->
-                        <!--                                android:id="@+id/textView6"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="0dp"-->
-                        <!--                                android:layout_weight="0.20" />-->
+                        &lt;!&ndash;                            <TextView&ndash;&gt;
+                        &lt;!&ndash;                                android:id="@+id/textView6"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_height="0dp"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_weight="0.20" />&ndash;&gt;
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/button3zfddsfgg"
@@ -352,11 +352,11 @@
                             android:text="₹ 550"
                             android:textStyle="bold" />
 
-                        <!--                            <TextView-->
-                        <!--                                android:id="@+id/textView6"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="0dp"-->
-                        <!--                                android:layout_weight="0.20" />-->
+                        &lt;!&ndash;                            <TextView&ndash;&gt;
+                        &lt;!&ndash;                                android:id="@+id/textView6"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_height="0dp"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_weight="0.20" />&ndash;&gt;
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/buttonsdf3zfdg"
@@ -421,11 +421,11 @@
                             android:text="₹ 550"
                             android:textStyle="bold" />
 
-                        <!--                            <TextView-->
-                        <!--                                android:id="@+id/textView6"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="0dp"-->
-                        <!--                                android:layout_weight="0.20" />-->
+                        &lt;!&ndash;                            <TextView&ndash;&gt;
+                        &lt;!&ndash;                                android:id="@+id/textView6"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_height="0dp"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_weight="0.20" />&ndash;&gt;
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/button3sdfzfdg"
@@ -490,11 +490,11 @@
                             android:text="₹ 550"
                             android:textStyle="bold" />
 
-                        <!--                            <TextView-->
-                        <!--                                android:id="@+id/textView6"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="0dp"-->
-                        <!--                                android:layout_weight="0.20" />-->
+                        &lt;!&ndash;                            <TextView&ndash;&gt;
+                        &lt;!&ndash;                                android:id="@+id/textView6"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_height="0dp"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_weight="0.20" />&ndash;&gt;
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/buttosdfn3zfdg"
@@ -559,11 +559,11 @@
                             android:text="₹ 550"
                             android:textStyle="bold" />
 
-                        <!--                            <TextView-->
-                        <!--                                android:id="@+id/textView6"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="0dp"-->
-                        <!--                                android:layout_weight="0.20" />-->
+                        &lt;!&ndash;                            <TextView&ndash;&gt;
+                        &lt;!&ndash;                                android:id="@+id/textView6"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_height="0dp"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_weight="0.20" />&ndash;&gt;
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/buttosdfgn3zfdg"
@@ -628,11 +628,11 @@
                             android:text="₹ 550"
                             android:textStyle="bold" />
 
-                        <!--                            <TextView-->
-                        <!--                                android:id="@+id/textView6"-->
-                        <!--                                android:layout_width="match_parent"-->
-                        <!--                                android:layout_height="0dp"-->
-                        <!--                                android:layout_weight="0.20" />-->
+                        &lt;!&ndash;                            <TextView&ndash;&gt;
+                        &lt;!&ndash;                                android:id="@+id/textView6"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_height="0dp"&ndash;&gt;
+                        &lt;!&ndash;                                android:layout_weight="0.20" />&ndash;&gt;
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/buttosdfgsdfgn3zfdg"
@@ -651,6 +651,6 @@
 
         </ScrollView>
 
-    </LinearLayout>
+    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

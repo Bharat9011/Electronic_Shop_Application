@@ -35,7 +35,7 @@ public class ui_control extends RecyclerView.Adapter<ui_control.ControlviewHolde
     @Override
     public void onBindViewHolder(@NonNull ControlviewHolder holder, int position) {
         massage_list massage = massageList[position];
-        Glide.with(holder.show_cat_image.getContext()).load("http://192.168.0.103/mobile_shop/"+massage.getFile()).into(holder.show_cat_image);
+        Glide.with(holder.show_cat_image.getContext()).load("http://192.168.0.105/mobile_shop/"+massage.getFile()).into(holder.show_cat_image);
         holder.show_cat_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
