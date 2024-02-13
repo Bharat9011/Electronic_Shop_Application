@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (optionItem == R.id.notification) {
-//            imgBtnlogo.setVisibility(View.GONE);
             Toast.makeText(this, "notification", Toast.LENGTH_SHORT).show();
         }
         return true;
